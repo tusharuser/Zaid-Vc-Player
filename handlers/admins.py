@@ -42,7 +42,7 @@ async def update_admin(client, message):
     for u in new_ads:
         new_admins.append(u.user.id)
     admins[message.chat.id] = new_admins
-    await message.reply_text("😄 ʙᴏᴛ **ʀᴇʟᴏᴀᴅᴇᴅ ᴘᴏᴡᴇʀ ʙʏ ᴢᴀɪᴅ !**\n✅ **Admin list** has been **updated !**")
+    await message.reply_text("😄 ʙᴏᴛ **ʀᴇʟᴏᴀᴅᴇᴅ ᴘᴏᴡᴇʀ ʙʏ Lᴏᴠᴇʟʏ !**\n✅ **Admin list** has been **updated !**")
 
 
 # Control Menu Of Player
@@ -98,7 +98,7 @@ async def pause(_, message: Message):
     if (chat_id not in callsmusic.pytgcalls.active_calls) or (
         callsmusic.pytgcalls.active_calls[chat_id] == "paused"
     ):
-        await message.reply_text("❗ᴍ ᴋᴜᴄʜʜ ᴘʟᴀʏ ᴋᴀʀ ʀʜᴀ ʜᴜ?😒!")
+        await message.reply_text("❗ᴀᴍ ɪ ᴘʟᴀʏɪɴɢ sᴏᴍᴇᴛʜɪɴɢ?😒!")
     else:
         callsmusic.pytgcalls.pause_stream(chat_id)
         await message.reply_text("▶️ ᴡᴛꜰ ᴘᴀᴜꜱᴇᴅ 😌!")
@@ -112,7 +112,7 @@ async def resume(_, message: Message):
     if (chat_id not in callsmusic.pytgcalls.active_calls) or (
         callsmusic.pytgcalls.active_calls[chat_id] == "playing"
     ):
-        await message.reply_text("❗ᴋᴜᴄʜʜ ᴘᴀᴜꜱᴇᴅ ᴍ ᴛʜᴀ?")
+        await message.reply_text("❗ᴡʜᴀᴛ sʜᴏᴜʟᴅ ɪ ᴘᴀᴜsᴇᴅ?")
     else:
         callsmusic.pytgcalls.resume_stream(chat_id)
         await message.reply_text("⏸ ᴏᴍᴋ ʀᴇꜱᴜᴍᴇᴅ!")
@@ -124,7 +124,7 @@ async def resume(_, message: Message):
 async def stop(_, message: Message):
     chat_id = get_chat_id(message.chat)
     if chat_id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("❗ ʜᴇʜᴇ ᴍ ᴋᴜᴄʜʜ ᴘʟᴀʏ ʜɪ ɴ ᴋᴀʀ ʀʜᴀ😉!")
+        await message.reply_text("❗ ɪ'ᴍ ɴᴏᴛ ᴘʟᴀʏɪɴɢ ᴀɴʏᴛʜɪɴɢ😂😉!")
     else:
         try:
             queues.clear(chat_id)
@@ -132,7 +132,7 @@ async def stop(_, message: Message):
             pass
 
         callsmusic.pytgcalls.leave_group_call(chat_id)
-        await message.reply_text("⏹ ᴇɴᴅᴇᴅ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴢᴀɪᴅ!")
+        await message.reply_text("⏹ ᴇɴᴅᴇᴅ ᴘᴏᴡᴇʀᴇᴅ ʙʏ Lᴏᴠᴇʟʏ!")
 
 
 @Client.on_message(command("skip") & other_filters)
@@ -172,7 +172,7 @@ async def authenticate(client, message):
         new_admins = admins[message.chat.id]
         new_admins.append(message.reply_to_message.from_user.id)
         admins[message.chat.id] = new_admins
-        await message.reply("🟢 ᴏᴋᴀʏ ɴᴏᴡ ꜱᴏɴ ᴀᴜᴛʜᴏʀɪᴢᴇᴅ.\n\nᴊᴀᴀ ᴍᴏᴊ ᴋᴀʀ, ʟɪᴋᴇ ᴀᴅᴍɪɴ ᴄᴍᴅꜱ 😁.")
+        await message.reply("🟢 ᴏᴋᴀʏ ɴᴏᴡ ꜱᴏɴ ᴀᴜᴛʜᴏʀɪᴢᴇᴅ.\n\nɴᴏᴡ ᴇɴᴊᴏʏ, ʟɪᴋᴇ ᴀᴅᴍɪɴ ᴄᴍᴅꜱ 😁.")
     else:
         await message.reply("✅ ᴏᴋᴀʏ ꜱᴏɴ ɪꜱ ɴᴏᴡ ᴀᴜᴛʜᴏʀɪᴢᴇᴅ!")
 
@@ -210,7 +210,7 @@ async def delcmdc(_, message: Message):
         else:
             await delcmd_on(chat_id)
             await message.reply_text(
-                "🟢 ᴀᴄᴛɪᴠᴀᴛᴇᴅ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴢᴀɪᴅ"
+                "🟢 ᴀᴄᴛɪᴠᴀᴛᴇᴅ ᴘᴏᴡᴇʀᴇᴅ ʙʏ Lᴏᴠᴇʟʏ"
             )
     elif status == "off":
         await delcmd_off(chat_id)
