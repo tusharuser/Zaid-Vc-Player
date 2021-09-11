@@ -23,7 +23,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 @errors
 async def stream(_, message: Message):
 
-    lel = await message.reply("🔁 **ᴘʀᴏᴄᴇꜱꜱɪɴɢ** ᴢ ᴘʟᴀʏᴇʀ...")
+    lel = await message.reply("🔁 **ᴘʀᴏᴄᴇꜱꜱɪɴɢ** ʟ ᴘʟᴀʏᴇʀ...")
     sender_id = message.from_user.id
     sender_name = message.from_user.first_name
 
@@ -32,10 +32,10 @@ async def stream(_, message: Message):
                 [
                     InlineKeyboardButton(
                         text="ɢʀᴏᴜᴘ",
-                        url=f"https://t.me/Zaid_Team1"),
+                        url=f"https://t.me/LOVELYAPPEAL"),
                     InlineKeyboardButton(
                         text="ᴄʜᴀɴɴᴇʟ",
-                        url=f"https://t.me/Zaid_Updates")
+                        url=f"https://t.me/ABOUTVEDMAT")
                 ]
             ]
         )
