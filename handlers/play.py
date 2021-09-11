@@ -518,7 +518,7 @@ async def play(_, message: Message):
         )
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/c4f29c045c84c0cdc249d.jpg"
+        thumb_name = "https://telegra.ph/file/060f78ed511293ad2e4f3.png"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -586,7 +586,7 @@ async def play(_, message: Message):
             while j < 6:
                 toxxt += f"{emojilist[j]} [{results[j]['title'][:30]}](https://youtube.com{results[j]['url_suffix']})\n"
                 toxxt += f" ├ 💡 **ᴅᴜʀᴀᴛɪᴏɴ** - {results[j]['duration']}\n"
-                toxxt += f" └ ⚡ __ᴘᴏᴡᴇʀᴇᴅ ʙʏ {BOT_NAME} ᴢᴀɪᴅ__\n\n"
+                toxxt += f" └ ⚡ __ᴘᴏᴡᴇʀᴇᴅ ʙʏ {BOT_NAME} Lᴏᴠᴇʟʏ__\n\n"
                 j += 1            
             keyboard = InlineKeyboardMarkup(
                 [
@@ -602,7 +602,7 @@ async def play(_, message: Message):
                     [
                         InlineKeyboardButton("6", callback_data=f'plll 5|{query}|{user_id}'),
                     ],
-                    [InlineKeyboardButton(text="🗑ᴢ ᴄʟᴏꜱᴇ", callback_data="cls")],
+                    [InlineKeyboardButton(text="🗑ʟ ᴄʟᴏꜱᴇ", callback_data="cls")],
                 ]
             )
             await message.reply_photo(
